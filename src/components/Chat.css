@@ -1,0 +1,89 @@
+.Chat {
+  flex: 0.65;
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+}
+
+.Chat__Header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 20px 0px;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+.Chat__HeaderInfo {
+  flex: 1;
+  padding-left: 20px;
+}
+.Chat__HeaderInfo > h3 {
+  margin-bottom: -12px;
+  font-weight: 500;
+}
+.Chat__HeaderInfo > p {
+  color: gray;
+}
+.Chat__HeaderRight {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100px;
+}
+.Chat__Body {
+  flex: 1;
+  /*
+  background-image: url("https://theabbie.github.io/blog/assets/official-whatsapp-background-image.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  */
+  background-color: #f6f6f6;
+  padding: 30px;
+  overflow-y: scroll;
+}
+.Chat__BodyMessage {
+  position: relative;
+  font-size: 14px;
+  padding: 12px;
+  background-color: #ffffff;
+  width: fit-content;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.Chat__BodyMessageReceiver {
+  margin-left: auto;
+  background-color: #dcf8c6;
+}
+.Chat_BodyMessageName {
+  position: absolute;
+  top: 0px;
+  font-weight: 800;
+  font-size: x-small;
+}
+.Chat_BodyMessageTimestamp {
+  margin-left: 10px;
+  font-size: xx-small;
+}
+.Chat__Footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+  border-top: 1px solid lightgray;
+}
+.Chat__Footer > form {
+  display: flex;
+  flex: 1;
+}
+.Chat__Footer > form > input {
+  display: flex;
+  flex: 1;
+  border-radius: 30px;
+  padding: 10px;
+  border: none;
+}
+.Chat__Footer > form > button {
+  display: none;
+}
+.Chat__Footer > .MuiSvgIcon-root {
+  padding: 10px;
+  color: gray;
+}
